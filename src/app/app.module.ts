@@ -1,3 +1,4 @@
+import { StopTrainingComponent } from './training/current-training/stop-training.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms'
@@ -28,7 +29,8 @@ import { PastTrainingsComponent } from './training/past-trainings/past-trainings
     WelcomeComponent,
     HeaderComponent,
     SidenavListComponent,
-    PastTrainingsComponent
+    PastTrainingsComponent,
+    StopTrainingComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +41,7 @@ import { PastTrainingsComponent } from './training/past-trainings/past-trainings
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [StopTrainingComponent]
 })
 export class AppModule { }
