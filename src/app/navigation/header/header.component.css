@@ -15,3 +15,10 @@ a:active {
   margin: 0;
 }
 
+.mat-toolbar-row, .mat-toolbar-single-row {
+  padding: 0 25px;
+}
+
+.fs-20{
+  font-size: 20px;
+}

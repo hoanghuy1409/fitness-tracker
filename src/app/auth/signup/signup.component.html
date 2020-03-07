@@ -1,4 +1,4 @@
-<section class="signup-form">
+<section>
   <form
     fxLayout="column"
     fxLayoutAlign="center center"
@@ -51,10 +51,10 @@
       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
-    <mat-checkbox ngModel name="agree" color="primary" required>
+    <mat-checkbox ngModel name="agree" color="accent" required>
       Agree to Terms and Conditions.
     </mat-checkbox>
-    <button
+    <button *ngIf="!isLoading"
       type="submit"
       mat-raised-button
       color="primary"
@@ -62,5 +62,6 @@
     >
       Submit
     </button>
+    <mat-spinner *ngIf="isLoading"></mat-spinner>
   </form>
 </section>
